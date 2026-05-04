@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Mohammad Masum | Applied Data Science</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1f2937;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #f8fafc;
+      padding: 60px 10%;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 720px;
+    }
+
+    h1 {
+      font-size: 44px;
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 50px;
+      color: #111827;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #111827;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #374151;
+      margin-bottom: 15px;
+    }
+
+    .tagline {
+      font-size: 18px;
+      color: #4b5563;
+      max-width: 680px;
+    }
+
+    .photo-placeholder {
+      width: 210px;
+      height: 250px;
+      background: #e5e7eb;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6b7280;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    main {
+      padding: 40px 10%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 22px;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .card p {
+      margin-top: 8px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    a {
+      color: #0f766e;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight {
+      background: #f0fdfa;
+      border-left: 4px solid #0f766e;
+      padding: 18px 22px;
+      margin: 25px 0;
+      border-radius: 6px;
+    }
+
+    footer {
+      background: #f8fafc;
+      padding: 30px 10%;
+      margin-top: 50px;
+      border-top: 1px solid #e5e7eb;
+      color: #4b5563;
+    }
+
+    .small {
+      color: #6b7280;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Dr. Mohammad Masum</h1>
+      <p class="subtitle">
+        Assistant Professor, Department of Applied Data Science<br>
+        San José State University
+      </p>
+      <p class="tagline">
+        I build reliable, interpretable, and real-world AI systems using large language models,
+        multimodal learning, cybersecurity analytics, healthcare AI, and edge intelligence.
+      </p>
+      <p>
+        <a href="https://scholar.google.com/citations?user=mbFx_DcAAAAJ&hl=en" target="_blank">Google Scholar</a> |
+        <a href="https://www.linkedin.com/in/mohammadmasumds/" target="_blank">LinkedIn</a> |
+        <a href="#">GitHub</a> |
+        <a href="mailto:mohammad.masum@sjsu.edu">Email</a>
+      </p>
+    </div>
+
+<img src="photo.jpg" width="210" style="border-radius:8px;">
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      Dr. Mohammad Masum is an Assistant Professor in the Department of Applied Data Science
+      at San José State University. His research focuses on applied artificial intelligence,
+      large language models, multimodal learning, cybersecurity, healthcare analytics, and
+      edge AI systems.
+    </p>
+
+    <div class="highlight">
+      My research vision is to design AI systems that do not simply process data, but understand
+      context, reason with evidence, and support reliable decision-making in high-impact domains.
+    </div>
+  </section>
+
+  <section>
+    <h2>Research Areas</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Large Language Models</h3>
+        <p>LLMs, RAG, instruction tuning, agentic AI, and reliable AI reasoning.</p>
+      </div>
+
+      <div class="card">
+        <h3>Multimodal AI</h3>
+        <p>Vision-language models, recommendation systems, visual reasoning, and information management.</p>
+      </div>
+
+      <div class="card">
+        <h3>Cybersecurity AI</h3>
+        <p>Malware detection, phishing analysis, intrusion detection, and trustworthy security intelligence.</p>
+      </div>
+
+      <div class="card">
+        <h3>Healthcare AI</h3>
+        <p>Medical imaging, wearable sensors, clinical NLP, and non-invasive health monitoring.</p>
+      </div>
+
+      <div class="card">
+        <h3>Edge AI and TinyML</h3>
+        <p>Efficient models for resource-constrained devices and real-time intelligent systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Featured Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>VisioRAG</h3>
+        <p>
+          A multimodal recommendation framework combining vision transformers and retrieval-augmented
+          generation to improve visual search and e-commerce information management.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>InvadeAI</h3>
+        <p>
+          An interactive advertising system using multimodal AI to connect visual understanding,
+          product context, and intelligent user engagement.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>HybridSense-LLM</h3>
+        <p>
+          A structured multimodal framework for wellness prediction from wearable sensors and
+          contextual self-reports.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>TinyPulse+</h3>
+        <p>
+          A TinyML-based health monitoring project focused on non-invasive blood pressure monitoring
+          and efficient deployment.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>PE2Prompt</h3>
+        <p>
+          A large language model-native framework for interpretable static malware analysis.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>LSE-Net</h3>
+        <p>
+          An integrated segmentation and ensemble deep learning framework for lung disease classification.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Selected Publications</h2>
+    <ul>
+      <li>HybridSense-LLM: A Structured Multimodal Framework for LLM-Based Wellness Prediction from Wearable Sensors, <em>Bioengineering</em>, 2026.</li>
+      <li>A Multimodal Framework for Enhancing E-Commerce Information Management Using Vision Transformers and Large Language Models, <em>International Journal of Information Management Data Insights</em>, 2025.</li>
+      <li>LSE-Net: Integrated Segmentation and Ensemble Deep Learning for Enhanced Lung Disease Classification, <em>Electronics</em>, 2025.</li>
+      <li>Deep Learning for Non-Invasive Blood Pressure Monitoring: Model Performance and Quantization Trade-Offs, <em>Electronics</em>, 2025.</li>
+      <li>Genie: Enhancing Information Management in the Restaurant Industry Through AI-Powered Chatbot, <em>International Journal of Information Management Data Insights</em>, 2024.</li>
+      <li>TinyML for Cybersecurity: Deploying Optimized Deep Learning Models for On-Device Threat Detection, IEEE Big Data, 2024.</li>
+    </ul>
+
+    <p>
+      Full publication list available on
+      <a href="https://scholar.google.com/citations?user=mbFx_DcAAAAJ&hl=en" target="_blank">Google Scholar</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Grants and Recognition</h2>
+    <ul>
+      <li>PI, CURF ASPIRE Grant, San José State University, 2025.</li>
+      <li>Participant, Research Impact Academy, San José State University, 2025.</li>
+      <li>Faculty Mentor, R&I Student RSCA Fellowship, San José State University, 2025.</li>
+      <li>PI, SJSU RSCA Seed Grant, TinyPulse+, 2024.</li>
+      <li>Best Paper Award, IEEE International Conference on Healthcare Informatics, 2022.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Teaching</h2>
+    <p>
+      I teach graduate-level courses that connect mathematical foundations, deep learning,
+      generative AI, and real-world data science applications.
+    </p>
+
+    <ul>
+      <li>DATA 220: Mathematical Methods for Data Analytics</li>
+      <li>DATA 255: Deep Learning Technologies</li>
+      <li>DATA 266: Generative AI and Language Models</li>
+      <li>Advanced Mathematical Methods for Data Intelligence</li>
+      <li>Generative Model Applications</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Student Research and Mentoring</h2>
+    <p>
+      I mentor graduate students on research projects in LLMs, multimodal AI, healthcare AI,
+      cybersecurity, TinyML, and applied machine learning. My mentoring emphasizes publication-quality
+      research, reproducible experiments, and real-world impact.
+    </p>
+
+    <ul>
+      <li>Graduate Research Advisor, Department of Applied Data Science, SJSU.</li>
+      <li>Committee Chair for MS students in Applied Data Science.</li>
+      <li>Faculty mentor for student research projects, publications, and competitions.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Service and Leadership</h2>
+    <ul>
+      <li>Department AI Ambassador, San José State University.</li>
+      <li>Graduate Research Advisor, Department of Applied Data Science.</li>
+      <li>Faculty Representative, Student Evaluation Review Board.</li>
+      <li>Member, CIDS RSCA Advisory Committee.</li>
+      <li>Guest Editor for special issues in AI, healthcare, and bioengineering.</li>
+      <li>Reviewer for journals and conferences in AI, data science, cybersecurity, and healthcare informatics.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      <strong>Email:</strong> <a href="mailto:mohammad.masum@sjsu.edu">mohammad.masum@sjsu.edu</a><br>
+      <strong>Google Scholar:</strong>
+      <a href="https://scholar.google.com/citations?user=mbFx_DcAAAAJ&hl=en" target="_blank">View Profile</a><br>
+      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mohammadmasumds/" target="_blank">linkedin.com/in/mohammadmasumds</a><br>
+      <strong>GitHub:</strong> Coming soon
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    © 2026 Dr. Mohammad Masum. Assistant Professor of Applied Data Science, San José State University.
+  </p>
+  <p class="small">
+    Building AI systems that are reliable, interpretable, and useful in the real world.
+  </p>
+</footer>
+
+</body>
+</html>
