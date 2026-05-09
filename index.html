@@ -149,7 +149,59 @@ h2::after {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 22px;
 }
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+}
 
+.team-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(15,118,110,0.13);
+}
+
+.avatar {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 14px auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.team-card h3 {
+  margin: 8px 0 4px 0;
+  font-size: 18px;
+}
+
+.team-card p {
+  margin: 0;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.team-card span {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
 .card {
   border: 1px solid var(--border);
   padding: 24px;
@@ -331,6 +383,141 @@ footer {
   }
 }
 </style>
+
+<section id="team">
+  <h2>Research Team</h2>
+
+  <p>
+    My research group is powered by graduate students who build, test, and publish real AI systems.
+    Our work connects LLMs, multimodal AI, cybersecurity, healthcare AI, and applied data science.
+  </p>
+
+  <div class="team-grid">
+
+    <div class="team-card">
+      <div class="avatar">CY</div>
+      <h3>Cheng-Huan Yu</h3>
+      <p>HybridSense-LLM</p>
+      <span>Wearable AI • Wellness Prediction • LLM Reasoning</span>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">AB</div>
+      <h3>Aishwarya Balachandran</h3>
+      <p>VisioRAG</p>
+      <span>Multimodal Recommendation • Vision Transformers • RAG</span>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">AD</div>
+      <h3>Andrew Dunton</h3>
+      <p>Object Detection & Agentic Vision</p>
+      <span>VLMs • Product Segmentation • Commercial AI</span>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">TY</div>
+      <h3>Tanya Yadav</h3>
+      <p>Cybersecurity AI</p>
+      <span>Phishing Detection • Malware Defense • LLM Security</span>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">AT</div>
+      <h3>Aniket Tekale</h3>
+      <p>Clinical Text Extraction</p>
+      <span>Healthcare NLP • RAG • Supervised Learning</span>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">BK</div>
+      <h3>B. K. Basavaraju</h3>
+      <p>LSE-Net</p>
+      <span>Medical Imaging • Lung Disease Classification</span>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">AV</div>
+      <h3>A. V. Devadasan</h3>
+      <p>TinyPulse+</p>
+      <span>Blood Pressure Monitoring • TinyML • Wearable AI</span>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">MG</div>
+      <h3>Megha Gupta</h3>
+      <p>Genie</p>
+      <span>AI Chatbots • Information Management • Restaurant AI</span>
+    </div>
+
+  </div>
+</section>
+  <section id="team">
+
+  <h2>Research Team</h2>
+
+  <p>
+    My research group focuses on building real-world AI systems across multimodal learning,
+    large language models, cybersecurity, healthcare AI, recommendation systems, and
+    interpretable machine learning. Students in the group actively contribute to publications,
+    research prototypes, and industry-relevant AI applications.
+  </p>
+
+  <div class="team-grid">
+
+    <div class="team-card">
+      <div class="avatar">YS</div>
+      <h3>Yilin Sun</h3>
+      <p>Interpretable Cybersecurity AI</p>
+      <span>PE2Prompt • Agentic Malware Analysis • LLM Reasoning</span>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">TY</div>
+      <h3>Tanya Yadav</h3>
+      <p>AI for Cybersecurity</p>
+      <span>Phishing URLs • Spam Detection • Agentic AI • LLM Security</span>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">AD</div>
+      <h3>Andrew Dunton</h3>
+      <p>Open-Vocabulary Vision Systems</p>
+      <span>Image Segmentation • Agentic AI • Vision-Language Models</span>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">SH</div>
+      <h3>Shao-Yu Huang</h3>
+      <p>Fashion Intelligence Systems</p>
+      <span>Style Classification • Recommendation Systems • Multimodal AI</span>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">AT</div>
+      <h3>Aditya Tekale</h3>
+      <p>Clinical AI and Mental Health</p>
+      <span>Longformer Transformers • Clinical NLP • LLM-based Classification</span>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">CY</div>
+      <h3>Cheng-Huan Yu</h3>
+      <p>Wearable AI and Wellness Prediction</p>
+      <span>HybridSense-LLM • Physiological Reasoning • Health AI</span>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">YK</div>
+      <h3>Yashasvi Kanchugantla</h3>
+      <p>Reliable Tabular AI Systems</p>
+      <span>Complexity-Aware Retrieval • In-Context Learning • LLM Analytics</span>
+    </div>
+
+  </div>
+
+</section>
+  
 </head>
 
 <body>
@@ -343,6 +530,7 @@ footer {
     <a href="#projects">Projects</a>
     <a href="#teaching">Teaching</a>
     <a href="#contact">Contact</a>
+    <a href="#team">Team</a>
   </div>
 </nav>
 
