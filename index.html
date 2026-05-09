@@ -181,66 +181,7 @@ a:hover {
   color: var(--primary-dark);
   text-decoration: underline;
 }
-.project-card {
-  position: relative;
-  min-height: 170px;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background: white;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
 
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 35px rgba(15,118,110,0.16);
-}
-
-.project-front,
-.project-hover {
-  position: absolute;
-  inset: 0;
-  padding: 24px;
-  transition: opacity 0.25s ease, transform 0.25s ease;
-}
-
-.project-front {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.project-front strong {
-  color: var(--primary-dark);
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.project-front span {
-  color: var(--muted);
-}
-
-.project-hover {
-  opacity: 0;
-  transform: translateY(10px);
-  background: linear-gradient(135deg, rgba(15,118,110,0.96), rgba(17,94,89,0.96));
-  color: white;
-  font-size: 15px;
-  line-height: 1.55;
-  display: flex;
-  align-items: center;
-}
-
-.project-card:hover .project-front {
-  opacity: 0;
-  transform: translateY(-10px);
-}
-
-.project-card:hover .project-hover {
-  opacity: 1;
-  transform: translateY(0);
-}
 /* BUTTON STYLE FOR TOP LINKS */
 .hero-text p:last-child a {
   display: inline-block;
@@ -368,61 +309,15 @@ footer {
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
   <h2>Featured Projects</h2>
-
   <div class="grid">
-
-    <div class="project-card">
-      <div class="project-front">
-        <strong>VisioRAG</strong>
-        <span>Multimodal recommendation using vision + LLMs</span>
-      </div>
-      <div class="project-hover">
-        VisioRAG combines vision transformers and retrieval-augmented generation to improve product understanding and recommendation. The project focuses on bridging visual signals, textual context, and user intent for more meaningful e-commerce information management.
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-front">
-        <strong>InvadeAI</strong>
-        <span>Interactive multimodal advertising system</span>
-      </div>
-      <div class="project-hover">
-        InvadeAI explores how multimodal AI can support interactive advertising by connecting visual product understanding with user engagement. The system is designed to make digital advertising more contextual, adaptive, and intelligence-driven.
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-front">
-        <strong>HybridSense-LLM</strong>
-        <span>Wearable + LLM health prediction</span>
-      </div>
-      <div class="project-hover">
-        HybridSense-LLM integrates wearable sensor data with contextual self-reports to support wellness prediction. The framework studies how large language models can reason over multimodal health signals for more personalized and interpretable insights.
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-front">
-        <strong>TinyPulse+</strong>
-        <span>TinyML for blood pressure monitoring</span>
-      </div>
-      <div class="project-hover">
-        TinyPulse+ focuses on efficient, device-friendly AI for non-invasive blood pressure monitoring. The project investigates model performance, quantization, and deployment trade-offs for practical health monitoring on resource-constrained devices.
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-front">
-        <strong>PE2Prompt</strong>
-        <span>LLM-based malware analysis</span>
-      </div>
-      <div class="project-hover">
-        PE2Prompt converts static malware features into human-readable prompts for large language model reasoning. The project aims to make malware analysis more interpretable, transparent, and useful for cybersecurity decision support.
-      </div>
-    </div>
-
+    <div class="card"><strong>VisioRAG</strong><br>Multimodal recommendation using vision + LLMs</div>
+    <div class="card"><strong>InvadeAI</strong><br>Interactive multimodal advertising system</div>
+    <div class="card"><strong>HybridSense-LLM</strong><br>Wearable + LLM health prediction</div>
+    <div class="card"><strong>TinyPulse+</strong><br>TinyML for blood pressure monitoring</div>
+    <div class="card"><strong>PE2Prompt</strong><br>LLM-based malware analysis</div>
   </div>
 </section>
 
