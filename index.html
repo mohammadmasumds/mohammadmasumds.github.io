@@ -250,6 +250,86 @@ footer {
     padding: 36px 7%;
   }
 }
+  .project-button {
+  margin-top: 12px;
+  padding: 9px 14px;
+  border: none;
+  border-radius: 999px;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.project-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(17, 24, 39, 0.72);
+}
+
+.modal-content {
+  background: #ffffff;
+  margin: 5% auto;
+  padding: 36px;
+  border-radius: 18px;
+  width: 82%;
+  max-width: 950px;
+  box-shadow: 0 24px 70px rgba(0,0,0,0.25);
+  animation: modalFade 0.25s ease;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-subtitle {
+  color: var(--primary-dark);
+  font-weight: 600;
+  margin-top: -8px;
+}
+
+.close {
+  float: right;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.close:hover {
+  color: #111827;
+}
+
+.paper-box {
+  border-left: 4px solid var(--primary);
+  background: #f8fafc;
+  padding: 16px 18px;
+  margin: 16px 0;
+  border-radius: 10px;
+}
+
+@keyframes modalFade {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 </style>
 </head>
 
@@ -313,7 +393,12 @@ footer {
 <section id="projects">
   <h2>Featured Projects</h2>
   <div class="grid">
-    <div class="card"><strong>VisioRAG</strong><br>Multimodal recommendation using vision + LLMs</div>
+    <div class="card">
+  <strong>Multimodal Recommendation Systems</strong><br>
+  Vision-language models, RAG, and attribute-aware AI for e-commerce intelligence.
+  <br><br>
+  <button class="project-button" onclick="openModal('visiorag-modal')">View Details</button>
+</div>
     <div class="card"><strong>InvadeAI</strong><br>Interactive multimodal advertising system</div>
     <div class="card"><strong>HybridSense-LLM</strong><br>Wearable + LLM health prediction</div>
     <div class="card"><strong>TinyPulse+</strong><br>TinyML for blood pressure monitoring</div>
@@ -388,6 +473,91 @@ footer {
 <footer>
   Building AI systems that understand, reason, and impact the real world.
 </footer>
+<div id="visiorag-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('visiorag-modal')">&times;</span>
 
+    <h2>Multimodal Recommendation Systems</h2>
+    <p class="modal-subtitle">
+      Vision Transformers • Large Language Models • RAG • Attribute-Aware Product Understanding
+    </p>
+
+    <p>
+      This research direction develops multimodal AI systems that improve product search,
+      recommendation, and information management by combining visual understanding,
+      language reasoning, and retrieval-augmented generation. The central goal is to move
+      beyond keyword-based retrieval and image-only similarity toward systems that better
+      understand customer intent, product attributes, and visual context.
+    </p>
+
+    <h3>Core Contributions</h3>
+    <ul>
+      <li>Integrates Vision Transformers and LLMs to improve e-commerce search and recommendation quality.</li>
+      <li>Uses LLM-generated captions to reduce the impact of noisy product descriptions and keyword stuffing.</li>
+      <li>Combines visual and textual representations through multimodal fusion for more context-aware retrieval.</li>
+      <li>Explores RAG-based query enhancement to better align recommendations with user intent.</li>
+      <li>Develops attribute-aware representation learning for fine-grained product understanding.</li>
+    </ul>
+
+    <h3>Representative Projects and Papers</h3>
+
+    <div class="paper-box">
+      <strong>BiLens: Multimodal Recommendation Framework</strong>
+      <p>
+        BiLens combines Vision Transformers and LLM-generated captions to improve product
+        recommendation accuracy. Visual features are extracted using ViT, while image captions
+        are transformed into contextual word embeddings. These representations are integrated
+        through early fusion and compared using cosine similarity to retrieve products that
+        better reflect customer intent.
+      </p>
+    </div>
+
+    <div class="paper-box">
+      <strong>VisioRAG: Vision Transformers and RAG for Recommendation</strong>
+      <p>
+        VisioRAG extends multimodal recommendation by using Retrieval-Augmented Generation
+        and LLM-based caption enhancement. The framework uses Florence-2-large for image
+        captioning, BERT for contextual embeddings, and Gemini for caption enhancement,
+        enabling richer product representations and more human-like query understanding.
+      </p>
+    </div>
+
+    <div class="paper-box">
+      <strong>FACTOR: Constrained Representation Refinement</strong>
+      <p>
+        FACTOR addresses fine-grained attribute recognition in fashion and e-commerce by
+        improving structured attribute prediction while preserving the stability of pretrained
+        vision-language models. The framework focuses on attributes such as color, material,
+        and pattern, which are essential for interpretable product understanding.
+      </p>
+    </div>
+
+    <h3>Impact</h3>
+    <p>
+      Together, these projects support the design of next-generation recommendation systems
+      that understand products more like humans do: through visual details, semantic attributes,
+      contextual descriptions, and user intent. This direction has applications in e-commerce,
+      digital advertising, visual search, and intelligent information management.
+    </p>
+  </div>
+</div>
+  <script>
+function openModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+
+window.onclick = function(event) {
+  const modals = document.querySelectorAll(".modal");
+  modals.forEach(function(modal) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+}
+</script>
 </body>
 </html>
