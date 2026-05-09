@@ -412,7 +412,12 @@ footer {
   <button class="project-button" onclick="openModal('health-modal')">View Details</button>
 </div>
     <div class="card"><strong>TinyPulse+</strong><br>TinyML for blood pressure monitoring</div>
-    <div class="card"><strong>PE2Prompt</strong><br>LLM-based malware analysis</div>
+    <div class="card">
+  <strong>Interpretable AI for Malware Analysis</strong><br>
+  LLM-native reasoning frameworks for explainable static malware detection.
+  <br><br>
+  <button class="project-button" onclick="openModal('malware-modal')">View Details</button>
+</div>
   </div>
 </section>
 
@@ -726,6 +731,86 @@ window.onclick = function(event) {
       systems that are interpretable, scalable, and accessible through consumer wearable
       technologies. The research aims to bridge physiological sensing, multimodal AI,
       and language-model reasoning for practical real-world wellness monitoring.
+    </p>
+
+  </div>
+
+</div>
+  <div id="malware-modal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('malware-modal')">&times;</span>
+
+    <h2>Interpretable AI for Malware Analysis</h2>
+
+    <p class="modal-subtitle">
+      Large Language Models • Static Malware Analysis • PE Features • Explainable Cybersecurity
+    </p>
+
+    <p>
+      This research direction develops interpretable and deployment-aware AI frameworks
+      for static malware analysis. The work focuses on bridging structured Portable
+      Executable (PE) features with large language model reasoning so that malware
+      predictions are not only accurate, but also transparent, auditable, and useful
+      for security analysts.
+    </p>
+
+    <h3>Research Themes</h3>
+
+    <ul>
+      <li>LLM-native malware classification from structured PE feature representations.</li>
+      <li>Feature-to-language transformation for interpretable cybersecurity reasoning.</li>
+      <li>Numerical feature summarization for byte histograms, entropy patterns, imports, exports, sections, and metadata.</li>
+      <li>Zero-shot and few-shot prompting for adaptable malware analysis without model retraining.</li>
+      <li>Multi-agent decomposition for feature-group-specific malware explanations and evidence attribution.</li>
+    </ul>
+
+    <h3>Representative Projects and Papers</h3>
+
+    <div class="paper-box">
+      <strong>PE2Prompt: LLM-Native Static Malware Analysis</strong>
+
+      <p>
+        PE2Prompt converts high-dimensional PE malware features into structured
+        language-based prompts for large language model reasoning. The framework uses
+        LLM-guided feature curation, numerical feature summarization, and structured
+        prompt construction to support interpretable zero-shot and few-shot malware
+        classification across models such as GPT-4o-mini, Claude, and DeepSeek.
+      </p>
+    </div>
+
+    <div class="paper-box">
+      <strong>Multi-Agent Malware Reasoning</strong>
+
+      <p>
+        This extension decomposes PE malware analysis into specialized agents aligned
+        with EMBER feature groups, including sections, linkage, metadata, histogram,
+        byte entropy, and printable strings. Each agent produces an independent verdict
+        and evidence-grounded explanation, which are aggregated through weighted voting
+        and summarized into a final analyst-facing rationale.
+      </p>
+    </div>
+
+    <div class="paper-box">
+      <strong>Feature-to-Language Cybersecurity Reasoning</strong>
+
+      <p>
+        This line of work formalizes a new feature-to-language paradigm for cybersecurity,
+        where numerical and structural malware indicators are transformed into natural
+        language reasoning templates. The goal is to make static malware workflows more
+        explainable, adaptable, and easier to audit in real-world security settings.
+      </p>
+    </div>
+
+    <h3>Impact</h3>
+
+    <p>
+      These projects aim to advance practical and explainable malware detection by
+      combining structured static analysis with language-model reasoning. The broader
+      goal is to support cybersecurity analysts with systems that can classify suspicious
+      files, identify evidence behind predictions, and provide transparent rationales
+      without requiring expensive retraining for every new deployment context.
     </p>
 
   </div>
