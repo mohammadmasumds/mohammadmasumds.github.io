@@ -405,7 +405,12 @@ footer {
   <br><br>
   <button class="project-button" onclick="openModal('product-modal')">View Details</button>
 </div>
-    <div class="card"><strong>HybridSense-LLM</strong><br>Wearable + LLM health prediction</div>
+    <div class="card">
+  <strong>Wearable AI and Multimodal Health Intelligence</strong><br>
+  LLM-driven wellness prediction using wearable sensors and physiological reasoning.
+  <br><br>
+  <button class="project-button" onclick="openModal('health-modal')">View Details</button>
+</div>
     <div class="card"><strong>TinyPulse+</strong><br>TinyML for blood pressure monitoring</div>
     <div class="card"><strong>PE2Prompt</strong><br>LLM-based malware analysis</div>
   </div>
@@ -647,6 +652,84 @@ window.onclick = function(event) {
     </p>
 
   </div>
+</div>
+  <div id="health-modal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('health-modal')">&times;</span>
+
+    <h2>Wearable AI and Multimodal Health Intelligence</h2>
+
+    <p class="modal-subtitle">
+      Wearable Sensors • Large Language Models • Physiological Reasoning • Wellness Prediction
+    </p>
+
+    <p>
+      This research direction investigates how multimodal AI and large language models
+      can support interpretable wellness prediction from wearable sensor data.
+      The work focuses on combining physiological signals, statistical descriptors,
+      contextual reasoning, and prompt-driven inference to build scalable and
+      human-interpretable health intelligence systems.
+    </p>
+
+    <h3>Research Themes</h3>
+
+    <ul>
+      <li>LLM-based reasoning over physiological and behavioral signals.</li>
+      <li>Multimodal integration of waveform data and statistical health descriptors.</li>
+      <li>Prompt-engineering strategies for wellness prediction.</li>
+      <li>Interpretable AI for stress, fatigue, readiness, and sleep analysis.</li>
+      <li>Efficient and low-cost health intelligence systems for wearable devices.</li>
+    </ul>
+
+    <h3>Representative Projects and Papers</h3>
+
+    <div class="paper-box">
+      <strong>HybridSense-LLM</strong>
+
+      <p>
+        HybridSense-LLM is a structured multimodal framework that integrates wearable
+        sensor signals, statistical feature extraction, and prompt-driven LLM reasoning
+        for wellness prediction. The system evaluates multiple prompting strategies
+        across OpenAI, Gemini, and DeepSeek models to estimate stress, fatigue,
+        readiness, and sleep quality from wearable data.
+      </p>
+    </div>
+
+    <div class="paper-box">
+      <strong>Physiological Signal Reasoning with LLMs</strong>
+
+      <p>
+        This line of work explores how large language models can reason over structured
+        physiological descriptors and waveform context to support transparent and
+        interpretable health prediction. The research studies the interaction between
+        statistical health features and natural-language reasoning strategies.
+      </p>
+    </div>
+
+    <div class="paper-box">
+      <strong>Prompt Engineering for Wellness Prediction</strong>
+
+      <p>
+        The framework systematically evaluates zero-shot, few-shot, self-consistency,
+        and tree-of-thought prompting approaches for health-related prediction tasks.
+        Results show that different prompting strategies provide task-dependent
+        improvements across wellness indicators.
+      </p>
+    </div>
+
+    <h3>Impact</h3>
+
+    <p>
+      Together, these projects contribute toward next-generation health intelligence
+      systems that are interpretable, scalable, and accessible through consumer wearable
+      technologies. The research aims to bridge physiological sensing, multimodal AI,
+      and language-model reasoning for practical real-world wellness monitoring.
+    </p>
+
+  </div>
+
 </div>
 </body>
 </html>
