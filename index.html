@@ -399,7 +399,12 @@ footer {
   <br><br>
   <button class="project-button" onclick="openModal('visiorag-modal')">View Details</button>
 </div>
-    <div class="card"><strong>InvadeAI</strong><br>Interactive multimodal advertising system</div>
+    <div class="card">
+  <strong>Open-Vocabulary Product Understanding</strong><br>
+  Agentic AI, multimodal segmentation, and commercial content understanding.
+  <br><br>
+  <button class="project-button" onclick="openModal('product-modal')">View Details</button>
+</div>
     <div class="card"><strong>HybridSense-LLM</strong><br>Wearable + LLM health prediction</div>
     <div class="card"><strong>TinyPulse+</strong><br>TinyML for blood pressure monitoring</div>
     <div class="card"><strong>PE2Prompt</strong><br>LLM-based malware analysis</div>
@@ -559,5 +564,89 @@ window.onclick = function(event) {
   });
 }
 </script>
+  <div id="product-modal" class="modal">
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('product-modal')">&times;</span>
+
+    <h2>Open-Vocabulary Product Understanding</h2>
+
+    <p class="modal-subtitle">
+      Agentic AI • Vision-Language Models • Product Segmentation • Commercial Content Analysis
+    </p>
+
+    <p>
+      This research direction explores how multimodal AI systems can understand,
+      localize, segment, and reason about products in unconstrained visual environments.
+      The work focuses on open-vocabulary product discovery, agentic segmentation,
+      synthetic data generation, and vision-language reasoning for large-scale
+      commercial media analysis.
+    </p>
+
+    <h3>Research Themes</h3>
+
+    <ul>
+      <li>Open-vocabulary product discovery beyond fixed category taxonomies.</li>
+      <li>Agentic AI systems that coordinate multiple vision and language tools.</li>
+      <li>Synthetic segmentation dataset generation using diffusion models.</li>
+      <li>Evaluation of multimodal LLMs against specialized detection architectures.</li>
+      <li>Semantic verification for product-level reasoning in real-world visual media.</li>
+    </ul>
+
+    <h3>Representative Projects and Papers</h3>
+
+    <div class="paper-box">
+      <strong>CARVE: Open-Vocabulary Product Discovery and Segmentation</strong>
+      <p>
+        CARVE integrates Grounding DINO, SAM2, and CLIP-based semantic verification
+        to support open-vocabulary product segmentation without task-specific retraining.
+        The framework enables robust product discovery in real-world visual media
+        and significantly improves segmentation quality and recall compared to
+        closed-set baselines.
+      </p>
+    </div>
+
+    <div class="paper-box">
+      <strong>Agentic AI for Consumer Product Segmentation</strong>
+      <p>
+        This project investigates agentic segmentation frameworks that use Gemini 2.5
+        as a reasoning orchestrator coordinating specialized tools such as Grounding DINO
+        and SAM2. The hybrid framework achieves strong segmentation quality while
+        supporting flexible open-vocabulary reasoning.
+      </p>
+    </div>
+
+    <div class="paper-box">
+      <strong>Benchmarking Multimodal LLMs for Object Detection</strong>
+      <p>
+        This work provides a quantitative comparison between multimodal LLMs and
+        specialized object detection models such as YOLO and DETR. The study evaluates
+        prompting strategies, RAG, and LoRA fine-tuning to understand how general-purpose
+        multimodal models compete in vision-centric tasks.
+      </p>
+    </div>
+
+    <div class="paper-box">
+      <strong>Prompt-Guided Synthetic Segmentation Generation</strong>
+      <p>
+        A diffusion-based inpainting framework designed to generate large-scale synthetic
+        segmentation datasets using prompt-guided scene generation. The framework reduces
+        dependence on manual annotation and improves segmentation performance in
+        data-scarce settings.
+      </p>
+    </div>
+
+    <h3>Impact</h3>
+
+    <p>
+      Together, these projects contribute toward next-generation AI systems capable of
+      understanding products in dynamic visual environments through multimodal reasoning,
+      open-vocabulary perception, and agentic orchestration. Applications include
+      e-commerce intelligence, visual search, social media analysis, digital advertising,
+      and autonomous commercial content understanding.
+    </p>
+
+  </div>
+</div>
 </body>
 </html>
