@@ -33,31 +33,44 @@ nav {
   position: sticky;
   top: 0;
   background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
-  padding: 16px 10%;
+  padding: 14px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.04);
 }
 
 nav strong {
   color: var(--primary-dark);
   font-size: 18px;
+  letter-spacing: -0.2px;
+}
+
+nav div:last-child {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 nav a {
-  text-decoration: none;
   color: var(--text);
-  margin-left: 22px;
-  font-weight: 500;
-  transition: color 0.2s ease;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  transition: all 0.2s ease;
 }
 
 nav a:hover {
-  color: var(--primary);
+  color: white;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(15,118,110,0.20);
 }
 
 /* HERO */
