@@ -278,6 +278,54 @@ footer {
   }
 }
 
+.news-list {
+  margin-top: 24px;
+  border-left: 3px solid var(--primary);
+  padding-left: 22px;
+}
+
+.news-item {
+  position: relative;
+  margin-bottom: 18px;
+  padding: 16px 18px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 5px 14px rgba(0,0,0,0.035);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(15,118,110,0.10);
+}
+
+.news-item::before {
+  content: "";
+  position: absolute;
+  left: -31px;
+  top: 22px;
+  width: 13px;
+  height: 13px;
+  background: var(--accent);
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.news-date {
+  display: inline-block;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin-bottom: 6px;
+}
+
+.news-item p {
+  margin: 0;
+  color: var(--muted);
+}
+  
+  
 /* MOBILE */
 @media (max-width: 700px) {
   nav {
@@ -394,8 +442,9 @@ footer {
 <nav>
   <div><strong>Mohammad Masum</strong></div>
   <div>
-    <a href="#research">Research</a>
     <a href="#directions">Directions</a>
+    <a href="#news">News</a>
+    <a href="#research">Research</a>
     <a href="#projects">Projects</a>
     <a href="#teaching">Teaching</a>
     <a href="#team">Team</a>
@@ -472,6 +521,73 @@ footer {
   </div>
 
 </section>
+
+<section id="news">
+
+  <h2>Recent News & Updates</h2>
+
+  <div class="news-list">
+
+    <div class="news-item">
+      <span class="news-date">2026</span>
+      <p>
+        Received the CIDS CURF ASPIRE Grant at San José State University supporting student-led research on robust, device-agnostic wellness prediction using large language models.
+      </p>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">2026</span>
+      <p>
+        Awarded the IDS Summer Research Stipend, College of Information, Data and Society (CIDS), supporting research on interpretable multi-agent large language model systems for cybersecurity analytics and malware detection.
+      </p>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">2026</span>
+      <p>
+        Yilin Sun was selected among the Top 10 finalists in the SJSU Grad Slam competition for research on interpretable agentic AI frameworks for malware analysis.
+      </p>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">2026</span>
+      <p>
+        Completed the SJSU Research Impact Academy (RIA), a university-wide program focused on research communication, public impact, and strategic engagement.
+      </p>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">2026</span>
+      <p>
+        Five graduate students are completing MS thesis research this semester across cybersecurity AI, wearable intelligence, recommendation systems, clinical NLP, and LLM-based analytics.
+      </p>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">2025</span>
+      <p>
+        Tanya Yadav received the SJSU Research and Innovation Student RSCA Fellowship for research in AI-driven cybersecurity systems, resulting in two peer-reviewed publications.
+      </p>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">2025</span>
+      <p>
+        Two graduate students successfully completed MS thesis research under my supervision in multimodal AI and open-vocabulary vision systems.
+      </p>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">2024</span>
+      <p>
+        Received the SJSU RSCA Seed Grant supporting research in edge AI and physiological signal analysis for non-invasive health monitoring, leading to a peer-reviewed publication in <em>MDPI Electronics</em> (2025).
+      </p>
+    </div>
+
+  </div>
+
+</section>
+  
 <!-- RESEARCH -->
 <section id="research">
   <h2>Research Areas</h2>
