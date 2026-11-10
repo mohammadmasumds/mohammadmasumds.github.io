@@ -496,6 +496,7 @@ footer {
     grid-template-columns: 1fr;
     gap: 8px;
   }
+  
 }
 
 /* PUBLICATIONS */
@@ -540,6 +541,130 @@ footer {
 }
 #publications .pub-arrow{font-size:14px;color:var(--pm);transition:transform .2s ease}
 #publications .pub-year[open] .pub-arrow{transform:rotate(180deg)}
+
+
+/* MS THESIS OPPORTUNITIES */
+
+.thesis-invite {
+  margin: 32px 0;
+  padding: 28px 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}
+
+.thesis-eyebrow {
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 24px;
+}
+
+.thesis-invite h3 {
+  color: #17212b;
+  font-size: clamp(23px, 3vw, 28px);
+  line-height: 1.35;
+  margin: 0 0 20px;
+}
+
+.thesis-invite h4 {
+  color: #17212b;
+  font-size: 17px;
+  margin: 24px 0 20px;
+}
+
+.thesis-invite p {
+  color: #334155;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0 0 18px;
+}
+
+.thesis-invite strong {
+  color: #17333a;
+  font-weight: 700;
+}
+
+/* SIMPLE VERTICAL RESEARCH QUESTIONS */
+
+.thesis-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 20px 0 28px;
+}
+
+.thesis-question {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #334155;
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.thesis-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  color: #0f766e;
+  border: 1.5px solid #0f766e;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.thesis-divider {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 30px 0;
+}
+
+.thesis-invite .thesis-contact {
+  color: #64748b;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.thesis-button {
+  display: inline-block;
+  padding: 13px 19px;
+  background: #0f766e;
+  color: #ffffff !important;
+  border-radius: 11px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 650;
+  transition: background 0.2s ease;
+}
+
+.thesis-button:hover {
+  background: #115e59;
+}
+
+.thesis-button:focus-visible {
+  outline: 3px solid #115e59;
+  outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .thesis-invite {
+    padding: 22px 18px;
+  }
+
+  .thesis-question {
+    gap: 12px;
+  }
+}
 
 </style>
 
@@ -1288,6 +1413,95 @@ footer {
 
 </section>
 <!-- END ART LAB -->
+
+<!-- MS THESIS RESEARCH OPPORTUNITIES -->
+
+<div class="thesis-invite" id="thesis-opportunities">
+
+  <div class="thesis-eyebrow">
+    🎓 MS THESIS RESEARCH OPPORTUNITIES
+  </div>
+
+  <h3>
+    Can AI agents recognize when they are wrong?
+  </h3>
+
+  <p>
+    At ART Lab, we investigate how intelligent systems
+    reason, collaborate, and make decisions—and what
+    happens when they fail. We welcome motivated MS
+    students who want to move beyond using AI tools
+    to investigating how AI systems actually work.
+  </p>
+
+  <h4>Questions you could help answer:</h4>
+
+  <div class="thesis-questions">
+
+    <div class="thesis-question">
+      <span class="thesis-icon">?</span>
+      <span>
+        When several AI agents collaborate and make
+        a mistake, can we identify which agent
+        caused it—and why?
+      </span>
+    </div>
+
+    <div class="thesis-question">
+      <span class="thesis-icon">!</span>
+      <span>
+        Can AI agents detect misleading instructions
+        hidden inside documents, tools, or memory?
+      </span>
+    </div>
+
+    <div class="thesis-question">
+      <span class="thesis-icon">✧</span>
+      <span>
+        Can an AI system recognize missing evidence,
+        investigate further, and correct its
+        own decision?
+      </span>
+    </div>
+
+  </div>
+
+  <hr class="thesis-divider">
+
+  <p>
+    Potential thesis projects involve large language
+    models, multi-agent systems, trustworthy AI,
+    and rigorous experimental evaluation.
+  </p>
+
+  <p>
+    <strong>
+      We especially welcome passionate, dedicated,
+      and hardworking students
+    </strong>
+    who take initiative, think critically, and
+    remain persistent when experiments become
+    challenging. We value curiosity, independent
+    learning, and a genuine commitment to
+    meaningful research.
+  </p>
+
+  <p class="thesis-contact">
+    Interested? Email a brief description of
+    your research interests, your resume, unofficial transcript,
+    and any relevant projects.
+  </p>
+
+  <a
+    class="thesis-button"
+    href="mailto:mohammad.masum@sjsu.edu?subject=MS%20Thesis%20Research%20Inquiry%20-%20ART%20Lab"
+  >
+    &#9993; &nbsp; Explore an MS Thesis with ART Lab &nearr;
+  </a>
+
+</div>
+
+<!-- END MS THESIS RESEARCH OPPORTUNITIES -->
 
 
 
