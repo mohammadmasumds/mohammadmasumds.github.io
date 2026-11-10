@@ -614,13 +614,35 @@ li {
 /* =====================================================
    08. ART LAB — MS THESIS OPPORTUNITIES
    ===================================================== */
+
 .thesis-invite {
-  margin: 32px 0;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 1120px;
+  margin: 32px auto;
   padding: 28px 24px;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 16px;
 }
+
+/* Avoid double margins inside ART Lab */
+#team .thesis-invite {
+  width: 100%;
+  max-width: none;
+  margin: 32px 0;
+}
+
+@media (max-width: 768px) {
+  .thesis-invite {
+    width: 86%;
+  }
+
+  #team .thesis-invite {
+    width: 100%;
+  }
+}
+
 
 .thesis-eyebrow {
   color: #0f766e;
