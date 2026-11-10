@@ -28,7 +28,9 @@ body {
   line-height: 1.6;
 }
 
-/* NAVBAR */
+/* =====================================================
+   01. NAVIGATION
+   ===================================================== */
 nav {
   position: sticky;
   top: 0;
@@ -73,7 +75,9 @@ nav a:hover {
   box-shadow: 0 6px 16px rgba(15,118,110,0.20);
 }
 
-/* HERO */
+/* =====================================================
+   02. HERO AND PROFILE
+   ===================================================== */
 header {
   padding: 80px 10%;
   background:
@@ -128,7 +132,26 @@ h1 {
   box-shadow: 0 22px 50px rgba(0,0,0,0.18);
 }
 
-/* SECTIONS */
+.hero-text p:last-child a {
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: 8px;
+  padding: 8px 13px;
+  border: 1px solid rgba(15,118,110,0.28);
+  border-radius: 999px;
+  background: rgba(15,118,110,0.06);
+  transition: all 0.2s ease;
+}
+
+.hero-text p:last-child a:hover {
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+}
+
+/* =====================================================
+   03. GLOBAL SECTIONS, LINKS AND CARDS
+   ===================================================== */
 section {
   padding: 46px 10%;
   max-width: 1120px;
@@ -156,65 +179,23 @@ h2::after {
   border-radius: 10px;
 }
 
-/* GRID */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 22px;
 }
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 22px;
-  margin-top: 24px;
-}
 
-.team-card {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 24px;
-  text-align: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
-}
-
-.team-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 35px rgba(15,118,110,0.13);
-}
-
-.avatar {
-  width: 58px;
-  height: 58px;
-  margin: 0 auto 14px auto;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 18px;
-}
-
-.team-card h3 {
-  margin: 8px 0 4px 0;
-  font-size: 18px;
-}
-
-.team-card p {
-  margin: 0;
-  color: var(--primary-dark);
-  font-weight: 700;
-}
-
-.team-card span {
-  display: block;
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 14px;
-}
 .card {
   border: 1px solid var(--border);
   padding: 24px;
@@ -235,62 +216,13 @@ h2::after {
   font-size: 17px;
 }
 
-/* LINKS */
-a {
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-a:hover {
-  color: var(--primary-dark);
-  text-decoration: underline;
-}
-
-/* BUTTON STYLE FOR TOP LINKS */
-.hero-text p:last-child a {
-  display: inline-block;
-  margin-right: 8px;
-  margin-top: 8px;
-  padding: 8px 13px;
-  border: 1px solid rgba(15,118,110,0.28);
-  border-radius: 999px;
-  background: rgba(15,118,110,0.06);
-  transition: all 0.2s ease;
-}
-
-.hero-text p:last-child a:hover {
-  background: var(--primary);
-  color: white;
-  text-decoration: none;
-}
-
-/* LISTS */
 li {
   margin-bottom: 8px;
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 36px;
-  border-top: 1px solid var(--border);
-  background: #ffffff;
-  color: var(--muted);
-}
-
-/* ANIMATION */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* =====================================================
+   04. NEWS
+   ===================================================== */
 .news-list {
   margin-top: 24px;
   border-left: 3px solid var(--primary);
@@ -339,30 +271,10 @@ footer {
 }
   
   
-/* MOBILE */
-@media (max-width: 700px) {
-  nav {
-    flex-direction: column;
-    gap: 10px;
-  }
 
-  nav a {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  h1 {
-    font-size: 38px;
-  }
-
-  header {
-    padding: 55px 7%;
-  }
-
-  section {
-    padding: 36px 7%;
-  }
-}
+/* =====================================================
+   05. PROJECT BUTTONS AND DETAIL MODALS
+   ===================================================== */
   .project-button {
   margin-top: 12px;
   padding: 9px 14px;
@@ -433,17 +345,225 @@ footer {
   border-radius: 10px;
 }
 
-@keyframes modalFade {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* =====================================================
+   06. PUBLICATIONS (CURRENT DESIGN)
+   ===================================================== */
+#publications {
+  --pc: var(--primary,#0f766e);
+  --pd: var(--primary-dark,#115e59);
+  --pt: var(--text,#111827);
+  --pm: var(--muted,#475569);
+  --pb: var(--border,#e2e8f0);
+  scroll-margin-top: 110px;
 }
-  
+
+#publications .pub-hero {
+  padding: 30px;
+  border: 1px solid #dcefeb;
+  border-radius: 20px;
+  background: linear-gradient(115deg,#f0fdfa,#fff 60%,#f5f7ff);
+  margin-bottom: 24px;
+}
+
+#publications .pub-kicker {
+  font-size: 11px;
+  letter-spacing: 1.6px;
+  font-weight: 800;
+  color: var(--pd);
+}
+
+#publications .pub-hero h2 {
+  border: 0;
+  padding: 0;
+  margin: 8px 0 12px;
+  font-size: clamp(28px,4vw,36px);
+  color: var(--pt);
+}
+
+#publications .pub-hero h2::after {
+  display: none;
+}
+
+#publications .pub-hero>p {
+  color: var(--pm);
+  max-width: 740px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+#publications .pub-year {
+  border: 1px solid var(--pb);
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 16px 0;
+  background: white;
+  box-shadow: 0 4px 18px #0f172a09;
+}
+
+#publications .pub-year>summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 19px 24px;
+  cursor: pointer;
+  background: #f8fafc;
+  color: var(--pd);
+}
+
+#publications .pub-year>summary::-webkit-details-marker {
+  display: none;
+}
+
+#publications .pub-year>summary:hover,#publications .pub-year[open]>summary {
+  background: #f0fdfa;
+}
+
+#publications .pub-year>summary:focus-visible {
+  outline: 3px solid var(--pc);
+  outline-offset: -3px;
+}
+
+#publications .pub-year-name {
+  font-size: 23px;
+  font-weight: 800;
+}
+
+#publications .pub-entry {
+  padding: 23px 26px;
+  border-top: 1px solid #e8eef0;
+  transition: background .2s ease;
+}
+
+#publications .pub-entry:hover {
+  background: #fbfefd;
+}
+
+#publications .pub-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  color: #526174;
+  font-size: 12px;
+  margin-bottom: 9px;
+}
+
+#publications .pub-badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 9px;
+  background: #e0f2f1;
+  color: #115e59;
+  font-weight: 750;
+  font-size: 11px;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+}
+
+#publications .pub-entry.conference .pub-badge {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+#publications .pub-entry h3 {
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0 0 7px;
+  color: var(--pt);
+  font-weight: 700;
+}
+
+#publications .pub-authors {
+  color: var(--pm);
+  font-size: 14px;
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+
+#publications .pub-tldr {
+  background: #f0fdfa;
+  border-left: 3px solid var(--pc);
+  border-radius: 0 10px 10px 0;
+  padding: 14px 17px;
+  margin: 12px 0 15px;
+}
+
+#publications .pub-tldr-label {
+  display: block;
+  color: #115e59;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+#publications .pub-tldr p {
+  margin: 0;
+  color: #334155;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+#publications .pub-entry:hover .pub-tldr {
+  background: #eaf8f5;
+}
+
+#publications .pub-entry>a {
+  display: inline-block;
+  color: var(--pc);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#publications .pub-entry>a:hover {
+  text-decoration: underline;
+  color: var(--pd);
+}
+
+#publications .pub-bottom {
+  text-align: center;
+  background: #f8fafc;
+  border: 1px solid var(--pb);
+  border-radius: 14px;
+  padding: 23px;
+  margin-top: 24px;
+}
+
+#publications .pub-bottom p {
+  margin: 0 0 12px;
+  color: var(--pm);
+}
+
+#publications .pub-bottom a {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 9px;
+  background: var(--pc);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#publications .pub-bottom a:hover {
+  background: var(--pd);
+}
+
+#publications .pub-arrow {
+  font-size: 14px;
+  color: var(--pm);
+  transition: transform .2s ease;
+}
+
+#publications .pub-year[open] .pub-arrow {
+  transform: rotate(180deg);
+}
+
+/* =====================================================
+   07. LEGACY PUBLICATION RULES (RETAINED FOR COMPATIBILITY)
+   ===================================================== */
 .publication-list {
   display: flex;
   flex-direction: column;
@@ -491,60 +611,9 @@ footer {
   font-size: 14px;
 }
 
-@media (max-width: 600px) {
-  .publication-item {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-  
-}
-
-/* PUBLICATIONS */
-
-/* All publication styles are scoped: other sections stay unchanged. */
-#publications {--pc:var(--primary,#0f766e);--pd:var(--primary-dark,#115e59);--pt:var(--text,#111827);--pm:var(--muted,#475569);--pb:var(--border,#e2e8f0);scroll-margin-top:110px}
-#publications .pub-hero{padding:30px;border:1px solid #dcefeb;border-radius:20px;background:linear-gradient(115deg,#f0fdfa,#fff 60%,#f5f7ff);margin-bottom:24px}
-#publications .pub-kicker{font-size:11px;letter-spacing:1.6px;font-weight:800;color:var(--pd)}
-#publications .pub-hero h2{border:0;padding:0;margin:8px 0 12px;font-size:clamp(28px,4vw,36px);color:var(--pt)}
-#publications .pub-hero h2::after{display:none}
-#publications .pub-hero>p{color:var(--pm);max-width:740px;line-height:1.7;margin:0}
-#publications .pub-year{border:1px solid var(--pb);border-radius:16px;overflow:hidden;margin:16px 0;background:white;box-shadow:0 4px 18px #0f172a09}
-#publications .pub-year>summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:19px 24px;cursor:pointer;background:#f8fafc;color:var(--pd)}
-#publications .pub-year>summary::-webkit-details-marker{display:none}
-#publications .pub-year>summary:hover,#publications .pub-year[open]>summary{background:#f0fdfa}
-#publications .pub-year>summary:focus-visible{outline:3px solid var(--pc);outline-offset:-3px}
-#publications .pub-year-name{font-size:23px;font-weight:800}
-#publications .pub-entry{padding:23px 26px;border-top:1px solid #e8eef0;transition:background .2s ease}
-#publications .pub-entry:hover{background:#fbfefd}
-#publications .pub-meta{display:flex;align-items:center;flex-wrap:wrap;gap:9px;color:#526174;font-size:12px;margin-bottom:9px}
-#publications .pub-badge{display:inline-block;border-radius:6px;padding:4px 9px;background:#e0f2f1;color:#115e59;font-weight:750;font-size:11px;letter-spacing:.4px;text-transform:uppercase}
-#publications .pub-entry.conference .pub-badge{background:#eef2ff;color:#4338ca}
-#publications .pub-entry h3{font-size:17px;line-height:1.5;margin:0 0 7px;color:var(--pt);font-weight:700}
-#publications .pub-authors{color:var(--pm);font-size:14px;margin:0 0 12px;line-height:1.6}
-#publications .pub-tldr{background:#f0fdfa;border-left:3px solid var(--pc);border-radius:0 10px 10px 0;padding:14px 17px;margin:12px 0 15px}
-#publications .pub-tldr-label{display:block;color:#115e59;font-size:11px;font-weight:800;letter-spacing:1px;margin-bottom:6px}
-#publications .pub-tldr p{margin:0;color:#334155;font-size:14px;line-height:1.75}
-#publications .pub-entry:hover .pub-tldr{background:#eaf8f5}
-#publications .pub-entry>a{display:inline-block;color:var(--pc);font-size:14px;font-weight:700;text-decoration:none}
-#publications .pub-entry>a:hover{text-decoration:underline;color:var(--pd)}
-#publications .pub-bottom{text-align:center;background:#f8fafc;border:1px solid var(--pb);border-radius:14px;padding:23px;margin-top:24px}
-#publications .pub-bottom p{margin:0 0 12px;color:var(--pm)}
-#publications .pub-bottom a{display:inline-block;padding:10px 16px;border-radius:9px;background:var(--pc);color:white;text-decoration:none;font-weight:700}
-#publications .pub-bottom a:hover{background:var(--pd)}
-@media (max-width:700px) {
-  #publications .pub-hero{padding:21px}
-  #publications .pub-year>summary{padding:16px}
-  #publications .pub-entry{padding:18px}
-}
-@media (prefers-reduced-motion:reduce) {
-  #publications .pub-entry, #publications .pub-arrow {transition:none}
-}
-#publications .pub-arrow{font-size:14px;color:var(--pm);transition:transform .2s ease}
-#publications .pub-year[open] .pub-arrow{transform:rotate(180deg)}
-
-
-/* MS THESIS OPPORTUNITIES */
-
+/* =====================================================
+   08. ART LAB — MS THESIS OPPORTUNITIES
+   ===================================================== */
 .thesis-invite {
   margin: 32px 0;
   padding: 28px 24px;
@@ -656,6 +725,141 @@ footer {
   outline-offset: 3px;
 }
 
+/* =====================================================
+   09. ART LAB — STUDENT PROFILES
+   ===================================================== */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.team-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(15,118,110,0.13);
+}
+
+.avatar {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 14px auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.team-card h3 {
+  margin: 8px 0 4px 0;
+  font-size: 18px;
+}
+
+.team-card p {
+  margin: 0;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.team-card span {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* =====================================================
+   10. FOOTER
+   ===================================================== */
+footer {
+  text-align: center;
+  padding: 36px;
+  border-top: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--muted);
+}
+
+/* =====================================================
+   11. ANIMATIONS
+   ===================================================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes modalFade {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+
+/* =====================================================
+   12. MOBILE / ACCESSIBILITY
+   ===================================================== */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  header {
+    padding: 55px 7%;
+  }
+
+  section {
+    padding: 36px 7%;
+  }
+}
+
+@media (max-width: 600px) {
+  .publication-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  
+}
+
+@media (max-width:700px) {
+  #publications .pub-hero{padding:21px}
+  #publications .pub-year>summary{padding:16px}
+  #publications .pub-entry{padding:18px}
+}
+
 @media (max-width: 768px) {
   .thesis-invite {
     padding: 22px 18px;
@@ -666,8 +870,11 @@ footer {
   }
 }
 
-</style>
+@media (prefers-reduced-motion:reduce) {
+  #publications .pub-entry, #publications .pub-arrow {transition:none}
+}
 
+</style>
 
   
 </head>
